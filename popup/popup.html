@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cluster Extension</title>
+    
+    <!-- Bulma CSS Framework (Local) -->
+    <link rel="stylesheet" href="bulma.min.css">
+    
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <div class="popup-container">
+        <!-- Header -->
+        <header class="popup-header">
+            <div class="header-logo">
+                <div class="header-icon">
+                    <img src="../images/cluster_icon_32.png" alt="Cluster Icon">
+                </div>
+                <h1 class="header-title">Cluster</h1>
+            </div>
+            
+            <!-- Settings Button -->
+            <button class="settings-button" id="settingsButton" title="Cài đặt">
+                ⚙️
+            </button>
+            
+            <!-- Settings Dropdown -->
+            <div class="settings-dropdown" id="settingsDropdown">
+                <!-- Theme Section -->
+                <div class="settings-section">
+                    <div class="settings-option">
+                        <label class="toggle-switch">
+                            <input type="checkbox" id="darkModeToggle" checked>
+                            <span class="toggle-slider"></span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Language Section -->
+                <div class="settings-section">
+                    <div class="settings-option">
+                        <select class="language-select" id="languageSelect">
+                            <option value="vi" selected>Tiếng Việt</option>
+                            <option value="en">English</option>
+                            <option value="ja">日本語</option>
+                            <option value="ko">한국어</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <div class="popup-content">
+            <!-- Action Button 1: View File Info -->
+            <button class="btn-view-info" id="viewInfoButton">
+                Xem thông tin file
+            </button>
+
+            <!-- Config Panel -->
+            <div class="config-panel">
+                <div class="config-item">
+                    <span class="config-label">Tên:</span>
+                    <span class="config-value">analysis_2024</span>
+                </div>
+                <div class="config-item">
+                    <span class="config-label">Type:</span>
+                    <span class="config-value">XLSX</span>
+                </div>
+                <div class="config-item">
+                    <span class="config-label">Số sheet:</span>
+                    <span class="config-value">5</span>
+                </div>
+            </div>
+
+            <!-- Action Button 2: Add to Workspace -->
+            <button class="btn-add-workspace" id="addWorkspaceButton">
+                Thêm vào Workspace
+            </button>
+
+            <!-- Notification -->
+            <div class="notification-success hidden" id="syncNotification">
+                <div class="notification-icon">✓</div>
+                <span>Đồng bộ thành công</span>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="popup-footer">
+            <a href="https://cluster.web.app" target="_blank" class="btn-workspace-link">
+                Đi đến Workspace
+            </a>
+        </footer>
+    </div>
+
+    <!-- Scripts -->
+    <script src="popup.js"></script>
+</body>
+</html>

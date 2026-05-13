@@ -304,3 +304,10 @@ project-root/
 ├── .env
 ├── .gitignore
 └── README.md
+
+---
+
+# Related
+- [[architecture]]
+- [[frontend-core]]
+- [[index]]

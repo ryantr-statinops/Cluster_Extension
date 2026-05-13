@@ -156,3 +156,11 @@ type CanvasNode = {
 
   data: Record<string, any>
 }
+```
+
+---
+
+# Related
+- [[zustand-architecture]]
+- [[canvas-ui]]
+- [[pipeline-runtime]]

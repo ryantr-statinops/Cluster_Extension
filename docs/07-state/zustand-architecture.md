@@ -138,3 +138,11 @@ type WorkspaceState = {
 
   isDirty: boolean
 }
+```
+
+---
+
+# Related
+- [[pipeline-runtime]]
+- [[react-flow-architecture]]
+- [[state-ownership]]

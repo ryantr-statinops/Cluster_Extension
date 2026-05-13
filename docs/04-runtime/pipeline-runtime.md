@@ -198,3 +198,13 @@ type RuntimeNode = {
 
   config: Record<string, any>
 }
+```
+
+---
+
+# Related
+- [[zustand-architecture]]
+- [[entities]]
+- [[react-flow-architecture]]
+- [[execution-model]]
+- [[alasql-architecture]]

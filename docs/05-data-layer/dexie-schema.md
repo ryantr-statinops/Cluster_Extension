@@ -89,3 +89,11 @@ Responsibility:
 
 ```ts
 const db = new Dexie("ClusterDB")
+```
+
+---
+
+# Related
+- [[indexeddb-strategy]]
+- [[pipeline-runtime]]
+- [[zustand-architecture]]
